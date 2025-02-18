@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #095771;
+}
+
+img{
+  max-height: 100px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  padding-right: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-bar {
+  width: 200px;
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+#search-button {
+  padding: 8px 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-right: 100px;
+}
+
+#search-button:hover {
+  background-color: #777;
+}
+
+.container {
+  margin-top: 70px; /* Adjusted for the fixed header height */
+  padding: 20px;
+}
+
+#weather-info {
+  background-color: #8ec5dc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+    border-color: #333;
+    border-radius: 5px;
+    
+}
+
+.grid-item {
+  background-color: #7ef2ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item:hover {
+  transform: scale(1.05); 
+}
+
+#forecast {
+  background-color: #8ec5dc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+#forecast-chart {
+  width: 100%;
+  max-height: 60%;
+}
+
+#img1{
+  background-color: white;
+}
+#img2{
+  background-color: white;
+}
+@media (max-width: 825px)
+{
+  #weather-info {
+    grid-template-columns: 1fr; /* Stack items in one column */
+}
+}

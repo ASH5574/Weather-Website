@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="app-title">Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for a location">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <div class="container">
+        <div id="weather-info" class="grid-container">
+            <div class="grid-item">
+                <h2 id="location-name"></h2>
+                <p id="date-time"></p>
+            </div>
+            <div class="grid-item">
+                <p id="weather-description"></p>
+            </div>
+            <div id="temp" style="background-color:#8ec5dc"><div class="grid-item">
+                <p id="temperature"></p>
+            </div>
+            <div class="grid-item" id="img1">
+                <img id="weather-image" src="" alt="Weather Image">
+            </div></div>
+            <div class="grid-item">
+                <p id="wind-speed"></p>
+            </div>
+            <div id="hum" style="background-color:#8ec5dc"><div class="grid-item">
+                <p id="humidity"></p>
+            </div>
+            
+            <div class="grid-item" id="img2">
+                <img id="humidity-image" src="" alt="Humidity Image">
+            </div></div>
+        </div>
+        <div id="forecast">
+            <h2>Next 7 Days Forecast</h2>
+            <canvas id="forecast-chart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
